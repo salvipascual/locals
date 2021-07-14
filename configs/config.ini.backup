@@ -1,0 +1,12 @@
+[database]
+host=
+user=root
+pass=
+name=
+
+[general]
+tier=development|production
+support_email=my@email.com
+
+[secure]
+key=

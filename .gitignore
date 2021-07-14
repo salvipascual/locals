@@ -1,0 +1,6 @@
+configs/config.ini
+composer.lock
+tmp/
+logs/
+vendor/
+.idea/

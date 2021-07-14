@@ -1,0 +1,21 @@
+RewriteEngine On
+ExpiresActive On
+
+#
+# clean URLs
+#
+RewriteBase /
+RewriteRule ^(\w+)/(\w+)/?$ index.php?c=$1&p=$2 [L,QSA]
+RewriteRule ^(\w+)/?$ index.php?c=$1 [L,QSA]
+
+#
+# set cache
+#
+ExpiresDefault "access plus 1 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 604800 seconds"
+ExpiresByType application/javascript "access plus 604800 seconds"
+#ExpiresByType text/html "access plus 2592000 seconds"
